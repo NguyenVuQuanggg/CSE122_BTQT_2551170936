@@ -1,0 +1,137 @@
+    
+/* Khung trang */
+.body {
+    max-width: 1100px;
+    margin: auto;
+    background-color: #FFFFFF;
+    padding: 20px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Tiêu đề đầu trang */
+h1 {
+    margin: 0 0 55px;
+    padding: 5px 3px 12px;
+    color: #B3261E;
+    background-color: #FBEFEC;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Tiêu đề công ty */
+h2 {
+    margin: 0 0 25px;
+    color: #C2185B;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Chia bố cục thành hai cột */
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+/* Cột bên trái chứa ảnh */
+.left-column {
+    width: 300px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Cột bên phải chứa nội dung */
+.right-column {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Tiêu đề Giới thiệu và Liên hệ */
+.list {
+    display: table;
+    margin: 0 0 15px;
+    padding: 5px 12px;
+    color: #111111;
+    background-color: #F8BBD0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Danh sách */
+.list-1,
+.list-2 {
+    padding-left: 27px;
+    margin: 0 0 25px;
+    font-size: 21px;
+    line-height: 1.8;
+}
+
+/* Dấu đầu dòng phần Giới thiệu */
+.list-1 {
+    list-style-type: square;
+}
+
+/* Dấu đầu dòng phần Liên hệ */
+.list-2 {
+    list-style-type: circle;
+}
+
+/* Copyright */
+.copyright {
+    margin-top: 25px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.copyright a {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+/* Hiển thị trên màn hình nhỏ */
+@media (max-width: 700px) {
+    .body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .left-column {
+        width: 200px;
+    }
+
+    .right-column {
+        width: 100%;
+    }
+
+    .list-1,
+    .list-2 {
+        font-size: 17px;
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+}
