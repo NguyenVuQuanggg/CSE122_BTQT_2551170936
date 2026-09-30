@@ -1,14 +1,12 @@
-/* Khung ngoài màu nền vàng nhạt */
-.container {
+.container{
     width: 650px;
-    background-color: #FFF8E7; /* Màu nền kem/vàng nhạt */
+    background-color: #FFF8E7;
     padding: 20px;
     margin: 20px auto;
     font-family: Arial, sans-serif;
 }
 
-/* Tiêu đề chính */
-.title {
+.title{
     color: #E65100;
     text-align: center;
     font-size: 22px;
@@ -16,61 +14,48 @@
     margin-bottom: 20px;
 }
 
-/* Khung chứa ảnh và bảng nằm cạnh nhau */
-.content {
+.content{
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
 }
 
-/* Hình ảnh bên trái */
-.img {
+.img{
     width: 180px;
-    border-radius: 8px; /* Bo góc nhẹ */
+    border-radius: 8px;
 }
 
-/* Định dạng bảng */
-table {
-    border-collapse: collapse; /* Gộp đường viền */
+table{
+    border-collapse: collapse;
     width: 380px;
     background-color: #FFFFFF;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.1); /* Bóng nhẹ dưới bảng */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Dòng tiêu đề bảng */
-th {
+th{
     background-color: #E65100;
     color: #FFFFFF;
     padding: 10px;
     font-weight: bold;
 }
 
-/* Ô nội dung */
-td {
+td{
     padding: 8px 12px;
-    border-bottom: 1px solid #E0D6C2; /* Đường kẻ dòng */
+    border-bottom: 1px solid  #E0D6C2;
 }
 
-/* Cột STT hẹp và căn giữa */
-.stt {
+.stt{
     width: 50px;
     text-align: center;
     font-weight: bold;
 }
 
-/* Cột Tên món ăn */
-.ten-mon {
+.ten-mon{
     text-align: left;
     font-weight: bold;
 }
 
-/* Xen kẽ màu nền các dòng (dòng chẵn dùng màu #FDF8EF) */
-tr:nth-child(even) {
-    background-color: #FDF8EF;
-}
-
-/* Các dòng lẻ giữ nền trắng */
-tr:nth-child(odd) {
+tr:nth-child(odd){
     background-color: #FFFFFF;
 }
