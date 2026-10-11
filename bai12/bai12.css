@@ -1,0 +1,20 @@
+/* Thiết lập ảnh nền cho trang web (bạn có thể thay đổi đường dẫn tới file Nen.gif của bạn) */
+body {
+    background-image: url('Anh/Bai12/Nen.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f8f9fa; /* Màu nền dự phòng nếu chưa có ảnh */
+}
+
+/* Định dạng cho khung lịch chính tổng thể */
+.calendar-main-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+/* Định dạng khung hiển thị lịch ở trên */
+.calendar-display-box {
+    border-color: #cccccc !important;
+    background-color: #ffffff;
+}

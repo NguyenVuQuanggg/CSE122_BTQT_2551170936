@@ -1,0 +1,9 @@
+/* Tùy chỉnh thêm nếu cần thiết, cấu trúc chính đã dùng sẵn class của Bootstrap */
+body {
+    background-color: #f4f6f9;
+}
+
+/* Đảm bảo khung đồng hồ có nền màu đen đúng yêu cầu đề bài (#000000) */
+#khungDongHo {
+    background-color: #000000 !important;
+}
