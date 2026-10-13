@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 18 - Trang bài viết kèm danh sách</title>
+    <!-- Nhúng Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Liên kết file CSS tùy chỉnh -->
+    <link rel="stylesheet" href="bai18.css">
+</head>
+<body class="py-4">
+
+    <div class="container my-3 p-4 bg-white rounded shadow-sm" style="max-width: 820px;">
+        
+        <!-- Tiêu đề đầu trang -->
+        <div class="page-header mb-4 pb-2 border-bottom">
+            <h3 class="text-danger fw-bold">Bài 18 — Trang bài viết kèm danh sách</h3>
+        </div>
+
+        <!-- Tiêu đề bài viết: màu cam cỡ lớn -->
+        <h1 class="article-title fw-bold">Bông điên điển</h1>
+        <h5 class="article-subtitle mb-4">Món ngon mùa nước nổi</h5>
+
+        <!-- Nội dung bài viết -->
+        <div class="article-content clearfix mb-5">
+            <!-- Ảnh hoa nổi bên phải -->
+            <img src="Diendien.jpg" alt="Bông điên điển" class="float-end ms-4 mb-2 rounded" style="width: 250px;">
+            
+            <!-- Đoạn văn đầu tiên có chữ cái đầu là drop cap màu cam -->
+            <p class="drop-cap-text">
+                Mỗi năm, vào đầu mùa nước nổi, những cây điên điển bên bờ sông, bờ rạch lại xanh tươi trở lại, trổ đầy hoa vàng rực giữa vùng lũ Đồng bằng sông Cửu Long.
+            </p>
+            <p class="article-desc">
+                Trước đây, người dân nghèo dùng bông điên điển nấu cháo cầm cự qua tháng ngày khó khăn. Ngày nay, bông điên điển trở thành món ngon: làm dưa chỉ cần ngâm với giá sống trong nước muối vừa mặn, ba ngày sau là có đĩa dưa chua giòn chấm nước tương ớt.
+            </p>
+        </div>
+
+        <!-- Khối "Hương vị miền Nam": viền xanh, nền #f4fbf4 -->
+        <div class="flavor-box p-4 rounded">
+            <!-- Tiêu đề khối: in nghiêng màu xanh -->
+            <h4 class="flavor-heading fst-italic fw-bold mb-3">Hương vị miền Nam</h4>
+            
+            <!-- Danh sách liệt kê 7 món chia 2 cột -->
+            <ul class="flavor-list mb-0">
+                <li>Bánh tráng Mỹ Lồng, bánh phồng Sơn Đốc</li>
+                <li>Dồi lươn rim nước cốt dừa</li>
+                <li>Bún mắm</li>
+                <li>Bún nước lèo Sóc Trăng</li>
+                <li>Nem lai Vung</li>
+                <li>Cốm dẹp</li>
+                <li>Bưởi Tân Triều</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Nhúng Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Liên kết file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

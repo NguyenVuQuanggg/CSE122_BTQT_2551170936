@@ -1,0 +1,63 @@
+/* Vỏ máy tính: độ rộng chuẩn, nền #111827, bo góc 16px, bóng đổ[cite: 14] */
+.calculator-container {
+    background-color: #111827;
+    width: 420px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* Màn hình: nền #022c22, chữ #4ade80, phép tính nhỏ + kết quả lớn[cite: 14] */
+.calculator-screen {
+    background-color: #022c22;
+    min-height: 85px;
+}
+
+.screen-expr {
+    color: #4ade80;
+    font-size: 1rem;
+    opacity: 0.85;
+    font-family: monospace;
+}
+
+.screen-res {
+    color: #4ade80;
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+/* Thiết lập kiểu dáng các nút bấm mô phỏng theo hình mẫu */
+.btn-calc {
+    border: none !important;
+    border-radius: 8px !important;
+    font-size: 1.1rem;
+    transition: filter 0.15s ease;
+}
+
+.btn-calc:hover {
+    filter: brightness(1.12);
+}
+
+/* Nút số: nền #25313f, chữ #e5e7eb, lưới 4 cột[cite: 14] */
+.btn-num {
+    background-color: #25313f !important;
+    color: #e5e7eb !important;
+}
+
+/* Nút phép tính: nền #0d6efd, chữ #FFFFFF, gồm ÷ × - +[cite: 14] */
+.btn-operator, .btn-op {
+    background-color: #0d6efd !important;
+    color: #FFFFFF !important;
+}
+
+/* Nút C: màu #dc2626[cite: 14] */
+.btn-c {
+    background-color: #dc2626 !important;
+    color: #FFFFFF !important;
+}
+
+/* Nút =: màu #16a34a[cite: 14] */
+.btn-equal {
+    background-color: #16a34a !important;
+    color: #FFFFFF !important;
+}

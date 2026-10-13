@@ -1,0 +1,32 @@
+body {
+    background-color: #fcf9f5;
+    font-family: Arial, sans-serif;
+    color: #222222;
+}
+
+/* Ảnh đồi cát bên trái có bóng đổ */
+.dune-img {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25) !important;
+    border-radius: 8px;
+}
+
+/* Tiêu đề: màu vàng #C9A227 có hiệu ứng bóng chữ màu đỏ/nâu */
+.article-title {
+    color: #C9A227;
+    text-shadow: 2px 2px 4px rgba(139, 0, 0, 0.35);
+    font-size: 1.85rem;
+}
+
+/* Khối nội dung: viền nét đứt màu cam #E07B00, bo góc, nền nhẹ */
+.content-box {
+    border: 2px dashed #E07B00;
+    background-color: #fffdfa;
+    line-height: 1.7;
+    font-size: 0.98rem;
+}
+
+/* Các từ nhấn mạnh (Phan Thiết, Hòn Rơm): màu đỏ cam, in đậm */
+.highlight {
+    color: #C62828;
+    font-weight: bold;
+}

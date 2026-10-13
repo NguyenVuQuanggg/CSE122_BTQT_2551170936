@@ -1,0 +1,128 @@
+body {
+    background-color: #faf5f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Tiêu đề đầu trang */
+.main-title {
+    background-color: #fce7db;
+    color: #c2410c;
+    font-weight: bold;
+    border-bottom: 3px solid #c2410c;
+}
+
+/* Khung form: nền #FFFFFF, viền #fed7aa, bo góc 12px */
+.form-container {
+    background-color: #ffffff;
+    border: 1px solid #fed7aa;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(249, 115, 22, 0.08);
+}
+
+.form-heading {
+    color: #c2410c;
+}
+
+/* Nút Đăng ký: nền #c2410c, chữ #FFFFFF */
+.btn-submit {
+    background-color: #c2410c !important;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 8px;
+    transition: filter 0.2s;
+}
+
+.btn-submit:hover {
+    filter: brightness(0.9);
+}
+
+/* Định dạng thông báo lỗi và hợp lệ dưới ô nhập */
+.error-msg {
+    font-size: 0.85rem;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+/* CSS trạng thái lỗi cho ô input và thông báo */
+.is-invalid-custom {
+    border-color: #dc2626 !important;
+    background-color: #fef2f2 !important;
+}
+
+.text-error {
+    color: #dc2626 !important;
+}
+
+/* CSS trạng thái hợp lệ cho ô input và thông báo */
+.is-valid-custom {
+    border-color: #16a34a !important;
+    background-color: #f0fdf4 !important;
+}
+
+.text-success-custom {
+    color: #16a34a !important;
+}
+body {
+    background-color: #faf5f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Tiêu đề đầu trang */
+.main-title {
+    background-color: #fce7db;
+    color: #c2410c;
+    font-weight: bold;
+    border-bottom: 3px solid #c2410c;
+}
+
+/* Khung form: nền #FFFFFF, viền #fed7aa, bo góc 12px */
+.form-container {
+    background-color: #ffffff;
+    border: 1px solid #fed7aa;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(249, 115, 22, 0.08);
+}
+
+.form-heading {
+    color: #c2410c;
+}
+
+/* Nút Đăng ký: nền #c2410c, chữ #FFFFFF */
+.btn-submit {
+    background-color: #c2410c !important;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 8px;
+    transition: filter 0.2s;
+}
+
+.btn-submit:hover {
+    filter: brightness(0.9);
+}
+
+/* Định dạng thông báo lỗi và hợp lệ dưới ô nhập */
+.error-msg {
+    font-size: 0.85rem;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+/* CSS trạng thái lỗi cho ô input và thông báo */
+.is-invalid-custom {
+    border-color: #dc2626 !important;
+    background-color: #fef2f2 !important;
+}
+
+.text-error {
+    color: #dc2626 !important;
+}
+
+/* CSS trạng thái hợp lệ cho ô input và thông báo */
+.is-valid-custom {
+    border-color: #16a34a !important;
+    background-color: #f0fdf4 !important;
+}
+
+.text-success-custom {
+    color: #16a34a !important;
+}

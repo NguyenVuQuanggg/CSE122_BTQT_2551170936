@@ -1,0 +1,61 @@
+body {
+    background-color: #faf7f2;
+    font-family: Arial, sans-serif;
+    color: #222222;
+}
+
+/* Tiêu đề bài viết màu cam cỡ lớn (#E65100) */
+.article-title {
+    color: #E65100;
+    font-size: 2.2rem;
+}
+
+.article-subtitle {
+    color: #E65100;
+    font-size: 1.1rem;
+}
+
+/* Hiệu ứng Drop cap cho chữ cái đầu đoạn văn (p::first-letter) */
+.drop-cap-text::first-letter {
+    font-size: 3.6rem;
+    font-weight: bold;
+    color: #E65100;
+    float: left;
+    line-height: 0.85;
+    padding-right: 10px;
+    padding-top: 4px;
+}
+
+.article-content {
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.article-desc {
+    margin-top: 15px;
+}
+
+/* Khối Hương vị miền Nam: viền xanh #2E7D32, nền #f4fbf4 */
+.flavor-box {
+    border: 1px solid #2E7D32;
+    background-color: #f4fbf4;
+}
+
+/* Tiêu đề khối: in nghiêng màu xanh #2E7D32 */
+.flavor-heading {
+    color: #2E7D32;
+}
+
+/* Danh sách chia 2 cột bằng columns và sử dụng icon tùy chỉnh */
+.flavor-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-image: url('icon_list_c.gif');
+    padding-left: 20px;
+}
+
+.flavor-list li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}

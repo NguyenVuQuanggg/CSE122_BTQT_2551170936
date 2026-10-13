@@ -1,13 +1,12 @@
-/* 1. Cấu hình giao diện chung nền tối */
 body {
-    background-color: #0f172a; /* Nền trang màu tối */
-    color: #e2e8f0;            /* Màu chữ tiêu đề chính */
+    background-color: #0f172a;
+    color: #e2e8f0;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 40px 20px;
 }
 
-/* 2. Tiêu đề và mô tả đầu trang */
+
 header {
     text-align: center;
     margin-bottom: 30px;
@@ -25,35 +24,35 @@ header p {
     margin: 0;
 }
 
-/* 3. Khung chứa lưới 3 cột */
+
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Đề bài: lưới 3 cột */
-    gap: 18px;                             /* Đề bài: gap 18px */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
     max-width: 900px;
     margin: 0 auto;
 }
 
-/* 4. Khung từng hình ảnh */
+
 figure {
-    background-color: #1e293b; /* Đề bài: nền #1e293b */
+    background-color: #1e293b;
     margin: 0;
     padding: 0;
     border-radius: 8px;
     overflow: hidden;
 }
 
-/* 5. Cấu hình thuộc tính ảnh */
+
 figure img {
     width: 100%;
     height: 180px;
-    object-fit: cover;         /* Đề bài: object-fit: cover */
+    object-fit: cover;
     display: block;
 }
 
-/* 6. Chú thích bên dưới mỗi ảnh */
+
 figcaption {
-    color: #cbd5e1;            /* Đề bài: chữ #cbd5e1 */
-    font-size: 13px;           /* Đề bài: cỡ 13px */
+    color: #cbd5e1;
+    font-size: 13px;
     padding: 12px 14px;
-}
+} 

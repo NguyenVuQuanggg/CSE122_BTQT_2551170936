@@ -1,0 +1,82 @@
+body {
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+}
+
+/* Thẻ ứng dụng */
+.todo-container {
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+/* Tiêu đề ứng dụng */
+.todo-header {
+    background-color: #6d28d9;
+    color: #ffffff;
+    padding: 24px;
+}
+
+/* Nút Thêm */
+.btn-purple {
+    background-color: #6d28d9;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-purple:hover {
+    background-color: #5b21b6;
+    color: #ffffff;
+}
+
+/* Ô input */
+.form-control:focus {
+    border-color: #6d28d9;
+    box-shadow: 0 0 0 0.2rem rgba(109, 40, 217, 0.25);
+}
+
+/* Từng dòng công việc */
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px dashed #ede9fe;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+/* Trạng thái hoàn thành (gạch ngang và mờ) */
+.completed {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+/* Nút Xoá */
+.btn-delete {
+    background-color: #fde2e2;
+    color: #b91c1c;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-delete:hover {
+    background-color: #fca5a5;
+    color: #991b1b;
+}
+
+/* Checkbox */
+.todo-checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #6d28d9;
+}

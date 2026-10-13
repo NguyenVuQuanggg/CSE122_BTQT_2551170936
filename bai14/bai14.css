@@ -1,0 +1,56 @@
+/* --- TÙY CHỈNH MÀU SẮC & GIAO DIỆN THEO ĐỀ BÀI --- */
+
+/* Dải tiêu đề chính: Nền xanh lá, chữ vàng, căn giữa */
+.banner-title {
+    background-color: #2E7D32; /* Màu nền xanh lá đậm */
+    color: #FFEB3B;            /* Màu chữ vàng */
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase; /* Viết hoa */
+    letter-spacing: 1px;
+}
+
+/* Đoạn dẫn nhập: Màu xanh đậm, in nghiêng */
+.lead-text {
+    color: #1b5e20;            /* Màu xanh lá đậm hơn */
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Tiêu đề mục (Tên kỳ quan): Màu xanh đậm, in đậm */
+.wonder-title {
+    color: #1b5e20;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* --- XỬ LÝ CSS QUAN TRỌNG ĐỂ SỬA LỖI TRÀN ẢNH --- */
+
+.wonder-img {
+    /* Khóa chặt ảnh vào khung chứa, không bao giờ vượt quá 100% chiều rộng khung */
+    width: 100% !important;
+    max-width: 100% !important;
+
+    /* Cố định chiều cao ảnh là 200px (Hợp lý & cân đối giống hình mẫu) */
+    height: 200px !important;
+
+    /* Tự động cắt ảnh vừa khít khung mà không làm méo ảnh */
+    object-fit: cover !important;
+    display: block;
+
+    /* Các thuộc tính bo góc và đổ bóng nhẹ theo yêu cầu */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Tùy chỉnh khung chứa (card) để đảm bảo chiều cao bằng nhau */
+.card-custom {
+    background-color: #fff;
+    padding: 15px;
+    transition: transform 0.2s; /* Hiệu ứng rê chuột nhẹ */
+}
+
+/* Hiệu ứng khi rê chuột vào mỗi kỳ quan */
+.card-custom:hover {
+    transform: translateY(-5px);
+}

@@ -1,0 +1,121 @@
+/* Nền tối toàn trang */
+body {
+    background-color: #12161c;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    max-width: 750px;
+}
+
+/* Khung ảnh: nền #1c2226, bo góc 12px */
+.display-box {
+    background-color: #1c2226;
+    border-radius: 12px;
+    max-width: 500px;
+}
+
+/* Kích thước ảnh chuẩn */
+.img-effect {
+    width: 140px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+/* Dòng chữ: gradient vàng gold, in nghiêng */
+.special-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #ffd700, #ffaa00, #ffcc33);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Thanh nút bấm: nền #232b30, bo góc */
+.button-toolbar {
+    background-color: #232b30;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 650px;
+}
+
+/* Kiểu dáng nút hiệu ứng thông thường */
+.btn-effect {
+    background-color: #232b30;
+    color: #e5e7eb;
+    border: 1px solid #374151;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-effect:hover {
+    background-color: #374151;
+    color: #ffffff;
+}
+
+/* Nút đang được chọn: màu #0d6efd */
+.btn-effect.active {
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+    color: #ffffff !important;
+}
+
+/* ===== CÁC LỚP HIỆU ỨNG CSS FILTER & TRANSFORM ===== */
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.xray {
+    filter: grayscale(100%) invert(100%);
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.fliph {
+    transform: scaleX(-1);
+}
+
+.flipv {
+    transform: scaleY(-1);
+}
+
+.glow {
+    filter: drop-shadow(0 0 10px #ffcc00);
+}
+
+.shadow {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.8));
+}
+
+.boldshadow {
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.95));
+}
+
+.dropshadow {
+    filter: drop-shadow(4px 4px 6px #3b82f6);
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+.wave {
+    filter: hue-rotate(90deg) saturate(200%);
+}
+
+.mask {
+    clip-path: ellipse(50% 50% at 50% 50%);
+}
+
+.alpha {
+    opacity: 0.4;
+}

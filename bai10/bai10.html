@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <title>Bài 10 - Form liên hệ</title>
     <link rel="stylesheet" href="bai10.css">
 </head>
+
 <body>
 
     <form class="contact-form" action="#" method="POST">
-        <!-- Tiêu đề form -->
+
         <div class="form-header">
             <h2>Liên hệ với chúng tôi</h2>
             <p>Vui lòng điền thông tin bên dưới, chúng tôi sẽ phản hồi trong 24 giờ.</p>
         </div>
 
-        <!-- Thân form -->
+
         <div class="form-body">
-            
-            <!-- Hàng 1: Họ và tên + Email (xếp 2 cột) -->
+
+
             <div class="form-row">
                 <div class="form-group">
                     <label for="fullname">Họ và tên</label>
@@ -29,7 +31,7 @@
                 </div>
             </div>
 
-            <!-- Hàng 2: Số điện thoại + Chủ đề (xếp 2 cột) -->
+
             <div class="form-row">
                 <div class="form-group">
                     <label for="phone">Số điện thoại</label>
@@ -45,19 +47,20 @@
                 </div>
             </div>
 
-            <!-- Hàng 3: Nội dung (textarea) -->
+
             <div class="form-group full-width">
                 <label for="message">Nội dung</label>
-                <textarea id="message" name="message" rows="4">Em muốn hỏi về lịch nộp bài tập môn Lập trình Web ạ.</textarea>
+                <textarea id="message" name="message"
+                    rows="4">Em muốn hỏi về lịch nộp bài tập môn Lập trình Web ạ.</textarea>
             </div>
 
-            <!-- Hàng 4: Checkbox đồng ý -->
+
             <div class="checkbox-group">
                 <input type="checkbox" id="agree" name="agree" checked>
                 <label for="agree">Tôi đồng ý nhận email phản hồi.</label>
             </div>
 
-            <!-- Hàng 5: Nút Gửi liên hệ & Nhập lại -->
+
             <div class="button-group">
                 <button type="submit" class="btn-submit">Gửi liên hệ</button>
                 <button type="reset" class="btn-reset">Nhập lại</button>
@@ -67,4 +70,5 @@
     </form>
 
 </body>
+
 </html>
