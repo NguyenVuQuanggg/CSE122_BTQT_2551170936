@@ -1,0 +1,9 @@
+/* Tùy chỉnh chung cho trang */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Bo góc thêm cho khung form */
+.card {
+    border-radius: 12px;
+}

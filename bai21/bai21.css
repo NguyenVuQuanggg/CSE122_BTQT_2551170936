@@ -1,0 +1,88 @@
+/* ==========================================
+   1. BANNER TRÊN CÙNG (Dùng Nen_banner.jpg)
+   ========================================== */
+.banner {
+    background-color: #C62828;
+    background-image: url('Nen_banner.jpg'); /* Đường dẫn ảnh trực tiếp cùng thư mục */
+    background-repeat: repeat-x;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ==========================================
+   2. MENU DỌC BÊN TRÁI
+   ========================================== */
+.sidebar-menu {
+    background: linear-gradient(to bottom, #C62828, #8E0000); 
+    min-height: 500px;
+}
+
+.sidebar-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 12px 15px;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ==========================================
+   3. NỘI DUNG CHÍNH Ở GIỮA
+   ========================================== */
+.content-title {
+    color: #C62828;
+    font-weight: bold;
+}
+
+/* Hộp menu con màu vàng #FFE082 */
+.sub-menu-box {
+    background-color: #FFE082;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sub-menu-item {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.sub-menu-item:hover {
+    color: #C62828;
+}
+
+/* Khung viền trắng chứa nội dung */
+.content-box {
+    background-color: #FFFFFF;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 35px 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ==========================================
+   4. CỘT QUẢNG CÁO BÊN PHẢI
+   ========================================== */
+.ads-column img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

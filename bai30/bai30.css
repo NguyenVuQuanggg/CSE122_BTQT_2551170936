@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Tùy chỉnh màu nền header bảng thành #212529 và chữ trắng */
+.table thead {
+    background-color: #212529 !important;
+    color: #ffffff;
+}
+
+/* Tùy chỉnh màu cho trang hiện tại trong phân trang thành #0d6efd */
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+    color: #ffffff !important;
+}
+
+/* Màu chữ cho các trang không active */
+.pagination .page-link {
+    color: #0d6efd;
+}
+
+/* Màu nền dòng xen kẽ (table-striped mặc định của Bootstrap đã hỗ trợ, có thể tùy chỉnh thêm nếu muốn) */
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #F8F9FA;
+}

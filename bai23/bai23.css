@@ -1,0 +1,42 @@
+/* ==========================================
+   THƯ VIỆN ẢNH - HIỆU ỨNG HOVER (BAI 23)
+   ========================================== */
+
+/* Thẻ chứa hình ảnh (Ô ảnh) */
+.gallery-item {
+    position: relative;
+    overflow: hidden;                 /* Cắt phần ảnh bị tràn ra ngoài khi phóng to */
+    border-radius: 16px;              /* Bo góc mềm mại giống hình minh họa */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Hiệu ứng đổ bóng */
+    cursor: pointer;
+    aspect-ratio: 16 / 10;            /* Giữ tỉ lệ khung hình chuẩn cho cả 6 ảnh */
+}
+
+/* Thẻ <img> bên trong ô ảnh */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                /* Đảm bảo ảnh lấp đầy khung mà không bị méo */
+    transition: transform 0.4s ease;  /* Hiệu ứng chuyển động mượt 0.4s */
+    display: block;
+}
+
+/* Hiệu ứng HOVER: Phóng to hình ảnh khi rê chuột vào */
+.gallery-item:hover img {
+    transform: scale(1.12);           /* Phóng to 1.12 lần theo yêu cầu */
+}
+
+/* Lớp phủ Gradient đen mờ ở đáy ảnh */
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 15px 12px 15px;     /* Khoảng đệm xung quanh chữ */
+    /* Dải màu chuyển từ trong suốt ở trên xuống màu đen mờ ở đáy */
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.85));
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+    pointer-events: none;             /* Tránh cản trở sự kiện hover của chuột */
+}

@@ -1,0 +1,125 @@
+/* 1. ĐỊNH NGHĨA BIẾN CSS (Màu mặc định - Chế độ Sáng) */
+:root {
+    --nen-trang: #f8f9fa;
+    --nen-the: #ffffff;
+    --vien-the: #dee2e6;
+    --mau-chu: #212529;
+    --mau-nhan: #0d6efd; /* Màu xanh nổi bật cho tiêu đề thẻ */
+}
+
+/* 2. GHI ĐÈ BIẾN CSS KHI BẬT CHẾ ĐỘ TỐI (Gắn class .toi vào <body>) */
+body.toi {
+    --nen-trang: #0f172a; /* Màu nền tối theo gợi ý */
+    --nen-the: #1e293b;   /* Màu thẻ tối */
+    --vien-the: #334155;  /* Viền thẻ tối */
+    --mau-chu: #e2e8f0;   /* Màu chữ sáng */
+    --mau-nhan: #60a5fa;  /* Màu xanh nhạt nổi bật hơn trên nền tối */
+}
+
+/* 3. THIẾT LẬP GIAO DIỆN CHUNG & HIỆU ỨNG CHUYỂN MÀU MƯỢT (TRANSITION) */
+body {
+    background-color: var(--nen-trang);
+    color: var(--mau-chu);
+    font-family: Arial, sans-serif;
+    padding: 30px 0;
+    
+    /* Chuyển màu nền và màu chữ mượt mà trong 0.3 giây */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 4. TÙY CHỈNH THẺ THÔNG TIN */
+.card-info {
+    background-color: var(--nen-the);
+    border: 1px solid var(--vien-the);
+    border-radius: 10px; /* Bo góc 10px */
+    padding: 20px;
+    margin-bottom: 20px;
+    
+    /* Chuyển màu nền và viền mượt mà */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Tiêu đề bên trong thẻ */
+.card-info .title {
+    color: var(--mau-nhan);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+/* Định dạng mã code dạng highlight nhỏ */
+code {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: inherit;
+}
+
+/* Tùy chỉnh màu nút gạt Bootstrap */
+.form-check-input:checked {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}/* 1. ĐỊNH NGHĨA BIẾN CSS (Màu mặc định - Chế độ Sáng) */
+:root {
+    --nen-trang: #f8f9fa;
+    --nen-the: #ffffff;
+    --vien-the: #dee2e6;
+    --mau-chu: #212529;
+    --mau-nhan: #0d6efd; /* Màu xanh nổi bật cho tiêu đề thẻ */
+}
+
+/* 2. GHI ĐÈ BIẾN CSS KHI BẬT CHẾ ĐỘ TỐI (Gắn class .toi vào <body>) */
+body.toi {
+    --nen-trang: #0f172a; /* Màu nền tối theo gợi ý */
+    --nen-the: #1e293b;   /* Màu thẻ tối */
+    --vien-the: #334155;  /* Viền thẻ tối */
+    --mau-chu: #e2e8f0;   /* Màu chữ sáng */
+    --mau-nhan: #60a5fa;  /* Màu xanh nhạt nổi bật hơn trên nền tối */
+}
+
+/* 3. THIẾT LẬP GIAO DIỆN CHUNG & HIỆU ỨNG CHUYỂN MÀU MƯỢT (TRANSITION) */
+body {
+    background-color: var(--nen-trang);
+    color: var(--mau-chu);
+    font-family: Arial, sans-serif;
+    padding: 30px 0;
+    
+    /* Chuyển màu nền và màu chữ mượt mà trong 0.3 giây */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 4. TÙY CHỈNH THẺ THÔNG TIN */
+.card-info {
+    background-color: var(--nen-the);
+    border: 1px solid var(--vien-the);
+    border-radius: 10px; /* Bo góc 10px */
+    padding: 20px;
+    margin-bottom: 20px;
+    
+    /* Chuyển màu nền và viền mượt mà */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Tiêu đề bên trong thẻ */
+.card-info .title {
+    color: var(--mau-nhan);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+/* Định dạng mã code dạng highlight nhỏ */
+code {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: inherit;
+}
+
+/* Tùy chỉnh màu nút gạt Bootstrap */
+.form-check-input:checked {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}   

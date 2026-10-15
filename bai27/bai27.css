@@ -1,0 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Cố định chiều cao ảnh card đều nhau và không bị méo hình */
+.card-img-top {
+    height: 180px; /* Chiều cao chuẩn theo gợi ý bài tập[cite: 6] */
+    object-fit: cover; /* Giúp ảnh tự động co giãn lấp đầy khung mà không bị biến dạng[cite: 6] */
+}

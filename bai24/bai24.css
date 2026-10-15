@@ -1,0 +1,106 @@
+/* ==========================================
+   BẢNG GIÁ KHÓA HỌC (BAI 24)
+   ========================================== */
+
+body {
+    background-color: #f8fafc;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+}
+
+/* Thẻ gói chung */
+.pricing-card {
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 14px; /* Bo góc 14px theo yêu cầu */
+    padding: 32px 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Bóng nhẹ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Nhãn gói (CƠ BẢN, PHỔ BIẾN NHẤT, NÂNG CAO) */
+.badge-tag {
+    background-color: #eef2ff;
+    color: #4338ca;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 6px 16px;
+    border-radius: 50px; /* Bo tròn */
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+/* Tên gói */
+.plan-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+/* Giá tiền */
+.plan-price {
+    color: #1e293b;
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.plan-price span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #64748b;
+}
+
+/* Danh sách quyền lợi */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px 0;
+    font-size: 14px;
+    color: #334155;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+}
+
+/* Nút bấm mặc định */
+.btn-custom {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+.btn-custom:hover {
+    background-color: #e2e8f0;
+}
+
+/* ==========================================
+   GÓI NỔI BẬT (.hot) - PRO
+   ========================================== */
+.pricing-card.hot {
+    border-color: #4f46e5; /* Viền màu tím #4f46e5 */
+    box-shadow: 0 12px 30px rgba(79, 70, 229, 0.18); /* Bóng đậm nổi bật */
+    transform: translateY(-8px); /* Nâng cao lên 8px */
+}
+
+.pricing-card.hot .btn-custom {
+    background-color: #4f46e5; /* Nút nền #4f46e5 */
+    color: #ffffff;             /* Chữ trắng */
+}
+
+.pricing-card.hot .btn-custom:hover {
+    background-color: #4338ca;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh lam thắng cảnh</title>
+    <!-- Nhúng Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Nhúng tệp CSS tự viết -->
+    <link rel="stylesheet" href="bai27.css">
+</head>
+<body class="bg-light py-5">
+
+    <div class="container">
+        
+        <!-- Tiêu đề chính -->
+        <h2 class="text-center text-danger fw-bold mb-4">Danh lam thắng cảnh</h2>
+
+        <!-- 1. Lưới thẻ Card (col-sm-6 col-lg-4) -->
+        <div class="row g-4 mb-5">
+            
+            <!-- Thẻ 1: Hang Sơn Đoòng -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="2-son-doong.jpg" class="card-img-top" alt="Hang Sơn Đoòng">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Hang Sơn Đoòng</h5>
+                        <p class="card-text text-muted">Hang động tự nhiên lớn nhất thế giới.</p>
+                        <!-- Nút Chi tiết mở Modal -->
+                        <div class="mt-auto">
+                            <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#modalSonDoong">
+                                Chi tiết
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thẻ 2: ĐBSCL -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="5-mekong.jpg" class="card-img-top" alt="ĐBSCL">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">ĐBSCL</h5>
+                        <p class="card-text text-muted">Miệt vườn sông nước trù phú.</p>
+                        <!-- Nút Chi tiết mở Modal -->
+                        <div class="mt-auto">
+                            <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#modalDBSCL">
+                                Chi tiết
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thẻ 3: Động Phong Nha -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="6-phong-nha.jpg" class="card-img-top" alt="Động Phong Nha">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Động Phong Nha</h5>
+                        <p class="card-text text-muted">Hệ thống hang động kỳ vĩ.</p>
+                        <!-- Nút Chi tiết mở Modal -->
+                        <div class="mt-auto">
+                            <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#modalPhongNha">
+                                Chi tiết
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 2. Accordion (Kinh nghiệm du lịch & Chi phí dự kiến) -->
+        <div class="accordion shadow-sm rounded overflow-hidden" id="accordionTravel">
+            
+            <!-- Mục 1: Kinh nghiệm du lịch (Mở mặc định) -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Kinh nghiệm du lịch
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionTravel">
+                    <div class="accordion-body text-secondary">
+                        Chuẩn bị giấy tờ, đặt tour sớm, mang theo thuốc chống côn trùng.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mục 2: Chi phí dự kiến -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Chi phí dự kiến
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionTravel">
+                    <div class="accordion-body text-secondary">
+                        Chi phí dao động tùy theo lịch trình tour (bao gồm vé tham quan, di chuyển, khách sạn và ăn uống). Vui lòng liên hệ trực tiếp để nhận báo giá chi tiết.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 3. MODALS (Hộp thoại chi tiết cho từng địa điểm) -->
+    
+    <!-- Modal Sơn Đoòng -->
+    <div class="modal fade" id="modalSonDoong" tabindex="-1" aria-labelledby="modalSonDoongLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalSonDoongLabel">Hang Sơn Đoòng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Hang Sơn Đoòng nằm trong vườn quốc gia Phong Nha - Kẻ Bàng, tỉnh Quảng Bình. Đây là hang động tự nhiên lớn nhất thế giới với hệ sinh thái riêng biệt và cảnh quan vô cùng kỳ vĩ.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-danger btn-book">Đặt ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ĐBSCL -->
+    <div class="modal fade" id="modalDBSCL" tabindex="-1" aria-labelledby="modalDBSCLLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalDBSCLLabel">Đồng Bằng Sông Cửu Long</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Miệt vườn sông nước trù phú với hệ thống kênh rạch chằng chịt, chợ nổi sầm uất và những vườn cây ăn trái quanh năm trĩu quả.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-danger btn-book">Đặt ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Động Phong Nha -->
+    <div class="modal fade" id="modalPhongNha" tabindex="-1" aria-labelledby="modalPhongNhaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="modalPhongNhaLabel">Động Phong Nha</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Được mệnh danh là "Thiên nam đệ nhất động", nổi tiếng với các khối thạch nhũ độc đáo và dòng sông ngầm kỳ ảo.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-danger btn-book">Đặt ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle (Bắt buộc cho Modal và Accordion hoạt động) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Nhúng tệp JavaScript tự viết -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Cố định chiều cao ảnh slide carousel đúng yêu cầu đề bài */
+.slide-img {
+    height: 340px;
+    object-fit: cover;
+}
+
+/* Tùy chỉnh màu sắc khi kích hoạt Tab nav-pills thành màu #0d6efd */
+.nav-pills .nav-link.active {
+    background-color: #0d6efd !important;
+    color: #ffffff !important;
+}
+
+.nav-pills .nav-link {
+    color: #0d6efd;
+}
